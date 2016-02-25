@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'HelveticaWorld-Bold';
+  src: url('../fonts/HelveticaWorld-Bold.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/HelveticaWorld-Bold.woff') format('woff'), 
+  url('../fonts/HelveticaWorld-Bold.ttf')  format('truetype'), 
+  url('../fonts/HelveticaWorld-Bold.svg#HelveticaWorld-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaWorld-BoldItalic';
+  src: url('../fonts/HelveticaWorld-BoldItalic.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/HelveticaWorld-BoldItalic.woff') format('woff'), 
+  url('../fonts/HelveticaWorld-BoldItalic.ttf')  format('truetype'), 
+  url('../fonts/HelveticaWorld-BoldItalic.svg#HelveticaWorld-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaWorld-Italic';
+  src: url('../fonts/HelveticaWorld-Italic.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/HelveticaWorld-Italic.woff') format('woff'), 
+  url('../fonts/HelveticaWorld-Italic.ttf')  format('truetype'), 
+  url('../fonts/HelveticaWorld-Italic.svg#HelveticaWorld-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaWorld-Regular';
+  src: url('../fonts/HelveticaWorld-Regular.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/HelveticaWorld-Regular.woff') format('woff'), 
+  url('../fonts/HelveticaWorld-Regular.ttf')  format('truetype'), 
+  url('../fonts/HelveticaWorld-Regular.svg#HelveticaWorld-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), 
+   url('../fonts/Roboto-Regular.woff') format('woff'), 
+   url('../fonts/Roboto-Regular.ttf')  format('truetype'), 
+   url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url('../fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'), 
+   url('../fonts/Roboto-Thin.woff') format('woff'), 
+   url('../fonts/Roboto-Thin.ttf')  format('truetype'), 
+   url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Roboto-Bold.woff') format('woff'), 
+  url('../fonts/Roboto-Bold.ttf')  format('truetype'), 
+  url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
