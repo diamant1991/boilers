@@ -334,8 +334,10 @@ body {
     background-color: white;
 }
 .first-line {
-    position: absolute;
+    position: fixed;
     width: 100%;
+    left: 0;
+    top: 0;
     height: 55px;
     margin: 0 0 0 0;
     background-color: white;
@@ -704,22 +706,22 @@ body {
 }
 .done .logos {
     float: left;
-    //width: 661px;
-    width: auto;
+    text-align: center;
+    width: 100%;
+    padding: 0 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     height: 117px;
-    margin: 59px 0 0 150px;
+    margin: 59px 0 0 0;
     //background: wheat;
 }
 .done .logo-d {
     float: left;
+    width: 20%;
     //margin: 0 94px 28px 0;
 }
-.done .l1 {
-    margin: 0 94px 0 0;
-}
-.done .l2 {
-    margin: 0 88px 0 0;
-}
+
 .done p {
     text-align: center;
     color: #5a5a5a;
@@ -761,6 +763,7 @@ body {
     width: 298px;
     height: 523px;
     border: 1px solid #d7ccc8;
+    opacity: 0;
     //margin: 0 28px 0 0px;
 }
 .prod-info:hover{
@@ -958,8 +961,7 @@ body {
     width: 237px;
     height: 49px;
     margin: 39px 0 0 8px;
-    background-image: -moz-linear-gradient( 90deg, rgb( 56, 142, 60 ) 0%, rgb( 56, 142, 60 ) 75.977%, rgb( 69, 169, 64 ) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb( 56, 142, 60 ) 0%, rgb( 56, 142, 60 ) 75.977%, rgb( 69, 169, 64 ) 100%);
+    background: url(../img/calc-economy.png)repeat-x;
     color: rgb( 255, 255, 255 );
     font-size: 22px;
     font-weight: bold;
@@ -1057,7 +1059,7 @@ body {
     line-height: 11px;
     margin: 15px 0 10px 0;
 }
-.f-form input {
+.f-form .form__input {
     float: left;
     width: 309px;
     height: 36px;
@@ -1076,12 +1078,10 @@ body {
 .f-form .f-phone3 {
     width: 198px;
 }
-.form-send-button {
+input.form-send-button {
     float: left;
     width: 205px;
     height: 35px;
-    background-image: -moz-linear-gradient( 90deg, rgb( 255, 214, 0 ) 0%, rgb( 255, 179, 0 ) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb( 255, 214, 0 ) 0%, rgb( 255, 179, 0 ) 100%);
     color: black;
     margin: 27px 0 0 70px;
     background: #ffc107;
@@ -1431,7 +1431,7 @@ body {
     line-height: 11px;
     margin: 15px 0 10px 0;
 }
-.m-form input {
+.m-form .form__input {
     float: left;
     width: 332px;
     height: 36px;
@@ -1457,8 +1457,6 @@ body {
     float: left;
     width: 205px;
     height: 35px;
-    background-image: -moz-linear-gradient( 90deg, rgb( 255, 214, 0 ) 0%, rgb( 255, 179, 0 ) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb( 255, 214, 0 ) 0%, rgb( 255, 179, 0 ) 100%);
     color: black;
     margin: 27px 0 0 70px;
     background: #ffc107;
@@ -1601,14 +1599,13 @@ body {
   border-width: 1px;
   border-color: rgb( 255, 167, 38 );
   border-radius: 2px;
-  background-image: -moz-linear-gradient( 90deg, rgb( 255, 202, 40 ) 0%, rgb( 255, 183, 77 ) 43.408%, rgb( 255, 143, 0 ) 71.069%, rgb( 255, 114, 0 ) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb( 255, 202, 40 ) 0%, rgb( 255, 183, 77 ) 43.408%, rgb( 255, 143, 0 ) 71.069%, rgb( 255, 114, 0 ) 100%);
+  background: url(../img/ui-widget.png)repeat-x;
 }
 .ui-widget-header{
   background: none;
 }
 .ui-slider-horizontal{
-  height: 14px;
+  height: 12px;
 }
 .calc-wrapp{
   width: 500px;
@@ -1656,7 +1653,7 @@ ul.bxslider {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2000;
+  z-index: 200;
 }
 /* PAGER */
 .bx-wrapper .bx-pager {
@@ -1718,7 +1715,7 @@ ul.bxslider {
   width: 45px;
   height: 100%;
   text-indent: -9999px;
-  z-index: 9999;
+  z-index: 99;
   -webkit-transition: all .15s ease-in-out;
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
@@ -2057,4 +2054,62 @@ ul.bxslider {
     background-image: url('../img/fancybox_loading@2x.gif');
     background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
   }
+}
+
+.certificats__carousel .bx-wrapper img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+.certificats__carousel .bxslider{
+  text-align: center;
+}
+.certificats__carousel .bx-wrapper{
+  padding: 0 60px;
+}
+.certificats__carousel .bxslider .cert2{
+  margin-left: 51px;
+}
+.certificats__carousel .bx-wrapper .bx-controls-direction a{
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  z-index: 99;
+}
+.certificats__carousel .bx-wrapper .bx-next {
+  right: 10px;
+  background: url(../img/controls.png) no-repeat -43px -32px;
+}
+.certificats__carousel .bx-wrapper .bx-prev {
+  left: 10px;
+  background: url(../img/controls.png) no-repeat 0 -32px;
+}
+.certificats__carousel .b-title{
+  float: none;
+  margin-bottom: 50px;
+}
+.certificats__carousel li{
+  position: relative;
+}
+.certificats__carousel li:hover .overlay{
+  display: block;
+}
+input.error,
+textarea.error {
+  border: 1px solid red !important;
+}
+.animate__arrow{
+  position: relative;
+}
+#arrow{
+  overflow: hidden;
+  height: 855px;
+  float: left;
+}
+.sroll{
+  opacity: 0;
 }
